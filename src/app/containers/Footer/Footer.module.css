@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 80px;
+  height: 88px;
+}
+
+.container > div {
+  min-width: 128px;
+}
+
+.leftSection > div:nth-child(1),
+.rightSection > p:nth-child(1) {
+  font-family: Lato;
+  font-size: 12.8px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.leftSection > div:nth-child(2),
+.rightSection > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.container > div > div:nth-child(2) > svg {
+  cursor: pointer;
+}

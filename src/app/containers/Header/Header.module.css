@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 80px;
+  height: 88px;
+}
+
+.container > a {
+  margin-left: auto;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}
+
+.container > button {
+  width: 86px;
+}

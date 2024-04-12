@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --lightBackground: #fafbfd;
+  --darkBackground: #020202;
+  --buttonBorder: 1px solid #e8e9f3;
+  --buttonShadow: 0px 4px 8px 0px #2e2f310d;
+  --fontBlack: #2e2f31;
+  --fontWhite: #fafbfd;
+  --buttonBlackBg: #2e2f31;
+  --textGrey: #74757a;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: var(--lightBackground);
+
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Lato", Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  color: var(--textGrey);
+}

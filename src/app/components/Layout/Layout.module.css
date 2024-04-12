@@ -1,0 +1,19 @@
+.container {
+  min-height: 100vh;
+  position: relative;
+}
+
+.container > header {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  height: 88px;
+}
+
+.body {
+  min-height: calc(100vh - 88px - 88px);
+}
+
+.footer {
+  height: 88px;
+}
