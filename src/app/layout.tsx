@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import ThemeContextProvider from "./context/ThemeContext";
 import "./globals.css";
+import favIcon from "../../public/next.svg";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "GP Calc",
-  description: "Calculate grades",
+  description: "Achieve Academic Excellence",
 };
 
 export default function RootLayout({
