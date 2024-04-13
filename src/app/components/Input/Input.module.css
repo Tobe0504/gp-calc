@@ -1,0 +1,154 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container {
+  margin-bottom: 16px;
+}
+
+.container > label {
+  color: var(--fontBlack);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  width: 100%;
+  display: block;
+}
+
+.container > span:nth-child(2) {
+  color: var(--red);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.input {
+  position: relative;
+  display: block;
+}
+
+.input > span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.input > input {
+  display: block;
+  width: 100%;
+  padding: 8px 24px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 5px 0;
+  border-radius: 8px;
+  animation: appear 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
+  border: 1px solid var(--fontBlack);
+}
+
+.input input:focus {
+  outline: 1px solid var(--fontBlack);
+}
+
+.valid {
+  border: 1px solid var(--inputBorder);
+  color: var(--fontBlack);
+}
+
+.invalid {
+  border: 1px solid var(--red);
+  color: var(--red);
+}
+
+.input > input::placeholder {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: var(--grey);
+}
+
+.errorMessage {
+  color: var(--red);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  animation: appear 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.tip {
+  color: var(--grey);
+  font-family: Archivo;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .input > input {
+    padding: 12px;
+    font-family: Archivo;
+    font-size: 14px;
+    line-height: 23px;
+    border-radius: 5px;
+  }
+
+  .container > label {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .errorMessage {
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  .input > span {
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) and (max-width: 1023px) {
+  .input > input {
+    padding: 12px;
+    font-family: Archivo;
+    font-size: 14px;
+    line-height: 23px;
+    border-radius: 5px;
+  }
+
+  .container > label {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .errorMessage {
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  .input > span {
+    right: 10px;
+  }
+}

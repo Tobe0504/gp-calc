@@ -1,0 +1,23 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 1.5rem 0;
+  animation: appear 0.3s ease-in-out;
+}
+
+.container > div {
+  flex-basis: 30%;
+  width: 30%;
+}

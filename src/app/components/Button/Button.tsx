@@ -1,5 +1,9 @@
+"use client";
+
 import classes from "./Button.module.css";
 import { CircularProgress } from "@mui/material";
+import { useContext } from "react";
+import { ThemeContext } from "@/app/context/ThemeContext";
 
 type ButtonPropTypes = {
   children: React.ReactNode;
@@ -24,6 +28,8 @@ const Button = ({
   onClick,
   loading,
 }: ButtonPropTypes) => {
+  // Context
+  const { theme } = useContext(ThemeContext);
   return (
     <button
       className={`${classes.button} ${

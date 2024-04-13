@@ -1,0 +1,54 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 1.5rem 0;
+  animation: appear 0.3s ease-in-out;
+}
+
+.whyCard {
+  flex-basis: 23%;
+  width: 23%;
+  border: 0.5px solid;
+  border-image-source: linear-gradient(
+    152.23deg,
+    #e8e9f3 0%,
+    #e8e9f3 0.01%,
+    #f3f4f9 114.06%
+  );
+  padding: 24px;
+  background-color: var(--fontWhite);
+  min-height: 392px;
+  box-shadow: var(--buttonShadow2);
+  border: 0.5px solid #e8e9f3;
+}
+
+.whyCard > h6 {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: var(--fontBlack);
+  margin: 1rem 0;
+}
+
+.whyCard > p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: var(--textGrey);
+}

@@ -5,10 +5,15 @@
   --darkBackground: #020202;
   --buttonBorder: 1px solid #e8e9f3;
   --buttonShadow: 0px 4px 8px 0px #2e2f310d;
+  --buttonShadow2: 0px 4px 8px 0px #2e2f310d;
   --fontBlack: #2e2f31;
   --fontWhite: #fafbfd;
   --buttonBlackBg: #2e2f31;
   --textGrey: #74757a;
+  --sectionNavButtonBg: #ecedf5;
+  --red: red;
+  --inputBorder: #e8e9f3;
+  --grey: #c1c2ca;
 }
 
 * {
@@ -23,6 +28,16 @@ body {
   overflow-x: hidden;
 }
 
+#dark {
+  background: var(--darkBackground);
+  color: rgb(var(--fontWhite));
+}
+
+#light {
+  color: rgb(var(--foreground-rgb));
+  background: var(--lightBackground);
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: var(--lightBackground);
@@ -33,6 +48,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#dark p,
+#dark h1,
+#dark h2,
+#dark h4,
+#dark h4,
+#dark h5,
+#dark h6,
+#dark div,
+#dark button {
+  color: var(--fontWhite);
+}
+
+#dark div {
+  background: var(--darkBackground);
+  color: var(--fontWhite);
+}
+
+#dark button {
+  /* background: var(--fontWhite); */
+  /* color: var(--fontBlack); */
+}
+
 code {
   font-family: "Lato", Menlo, Monaco, Consolas, "Courier New", monospace;
 }
@@ -41,4 +78,10 @@ a {
   color: inherit;
   text-decoration: none;
   color: var(--textGrey);
+}
+
+#dark a {
+  color: inherit;
+  text-decoration: none;
+  color: var(--fontWhite);
 }

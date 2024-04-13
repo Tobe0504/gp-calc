@@ -22,7 +22,6 @@
 .primary {
   background: transparent;
   border: var(--buttonBorder);
-  color: var(--white);
 }
 
 .primary:hover {
@@ -31,7 +30,7 @@
 
 .primary:active {
   background-color: var(--activePrimaryBlue);
-  color: var(--white);
+  color: var(--fontWhite);
 }
 
 .secondary {

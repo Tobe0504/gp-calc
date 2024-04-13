@@ -1,8 +1,14 @@
+"use client";
+
 import classes from "./Footer.module.css";
 import lightLogoAlone from "../../../../public/lightLogoAlone.svg";
 import Image from "next/image";
+import { useContext } from "react";
+import { ThemeContext } from "@/app/context/ThemeContext";
 
 const Footer = () => {
+  // Context
+  const { setTheme } = useContext(ThemeContext);
   return (
     <section className={classes.container}>
       <div className={classes.leftSection}>
@@ -68,6 +74,9 @@ const Footer = () => {
             viewBox="0 0 32 32"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            onClick={() => {
+              setTheme("light");
+            }}
           >
             <rect width="32" height="32" rx="16" fill="#F4F4F9" />
             <g clip-path="url(#clip0_53_1065)">
@@ -94,6 +103,9 @@ const Footer = () => {
             viewBox="0 0 32 32"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            onClick={() => {
+              setTheme("dark");
+            }}
           >
             <rect width="32" height="32" rx="16" fill="#FAFBFD" />
             <path

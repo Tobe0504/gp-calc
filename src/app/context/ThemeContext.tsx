@@ -11,7 +11,7 @@ type ThemeContextProviderProps = {
   children: React.ReactNode;
 };
 
-const ThemeContext = createContext({} as ThemeContextValues);
+export const ThemeContext = createContext({} as ThemeContextValues);
 
 const ThemeContextProvider = ({ children }: ThemeContextProviderProps) => {
   // States

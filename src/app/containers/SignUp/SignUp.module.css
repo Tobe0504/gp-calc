@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 80px;
+
+  min-height: calc(100vh - 88px - 88px);
+}
+
+.innerContainer {
+  width: 706px;
+  text-align: center;
+}
+
+.innerContainer > h4 {
+  font-family: Lato;
+  font-size: 39.06px;
+  font-weight: 900;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.innerContainer > form {
+  width: 70%;
+  margin: auto;
+}
+
+.innerContainer > form > button {
+  margin-top: 2rem;
+}
+
+.privacyPolicy {
+  font-family: Lato;
+  font-size: 12.8px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+  color: var(--textGrey);
+  margin-top: 52px;
+  text-align: center;
+}
+
+.privacyPolicy > a {
+  font-family: Lato;
+  font-size: 12.8px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: center;
+  color: var(--buttonBlackBg);
+}
