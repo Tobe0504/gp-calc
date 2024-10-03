@@ -1,10 +1,15 @@
+"use client";
+
 import Button from "@/app/components/Button/Button";
 import Input from "@/app/components/Input/Input";
 import Layout from "@/app/components/Layout/Layout";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import classes from "./SignUp.module.css";
 
 const SignUp = () => {
+  // Router
+  const router = useRouter();
   return (
     <Layout useSecondLogo>
       <section className={classes.container}>
@@ -19,7 +24,15 @@ const SignUp = () => {
               placeholder="****"
               label="Confirm password"
             />
-            <Button type="secondary">Continue</Button>
+            <Button
+              type="secondary"
+              onClick={(e) => {
+                e.preventDefault();
+                router.push("/sign-up/get-started");
+              }}
+            >
+              Continue
+            </Button>
           </form>
 
           <p className={classes.privacyPolicy}>

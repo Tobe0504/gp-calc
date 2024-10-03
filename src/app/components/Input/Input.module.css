@@ -59,7 +59,7 @@
   animation: appear 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: transparent;
-  border: 1px solid var(--fontBlack);
+  border: 1px solid var(--inputBorder);
 }
 
 .input input:focus {
