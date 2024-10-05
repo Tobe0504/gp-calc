@@ -48,8 +48,8 @@
 }
 
 .secondary:disabled {
-  border: 2px solid var(--disabled);
-  color: var(--disabled);
+  border: none;
+  background-color: var(--disabled);
   cursor: not-allowed;
 }
 

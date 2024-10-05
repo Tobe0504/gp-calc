@@ -1,0 +1,41 @@
+.progressContainer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.progressSection {
+  height: 8px;
+  background-color: var(--inputBorder);
+  border-radius: 24px;
+  flex: 1;
+  width: 100%;
+}
+
+.progressSection > div {
+  background-color: var(--navyBlue);
+  height: 100%;
+  border-radius: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.progressContainer > p {
+  font-family: Lato;
+  font-size: 12.8px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+  color: var(--textGrey);
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.container > p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 8px;
+  color: var(--grey2);
+}

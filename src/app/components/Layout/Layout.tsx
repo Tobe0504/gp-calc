@@ -9,9 +9,10 @@ import classes from "./Layout.module.css";
 type LayoutPropTypes = {
   children: React.ReactNode;
   useSecondLogo?: boolean;
+  className?: string;
 };
 
-const Layout = ({ children, useSecondLogo }: LayoutPropTypes) => {
+const Layout = ({ children, useSecondLogo, className }: LayoutPropTypes) => {
   // Context
   const { theme } = useContext(ThemeContext);
 
@@ -21,7 +22,7 @@ const Layout = ({ children, useSecondLogo }: LayoutPropTypes) => {
         <Header useSecondLogo={useSecondLogo} />
       </header>
 
-      <section className={classes.body}>{children}</section>
+      <section className={`${classes.body} ${className}`}>{children}</section>
 
       <footer className={classes.footer}>
         <Footer />

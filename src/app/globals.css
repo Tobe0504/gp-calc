@@ -14,6 +14,9 @@
   --red: red;
   --inputBorder: #e8e9f3;
   --grey: #c1c2ca;
+  --grey2: #74757a;
+  --navyBlue: #003366;
+  --disabled: #999999;
 }
 
 * {

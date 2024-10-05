@@ -3,8 +3,6 @@
   align-items: center;
   justify-content: center;
   padding: 48px 80px;
-
-  min-height: calc(100vh - 88px - 88px);
 }
 
 .innerContainer {
@@ -18,10 +16,27 @@
   font-weight: 900;
   line-height: 48px;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 4rem;
 }
 
-.innerContainer > p {
+.gps {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.gps > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.gps > div > label {
   font-family: Lato;
   font-size: 20px;
   font-weight: 600;
@@ -32,5 +47,14 @@
 
 .innerContainer > button {
   max-width: 180px;
-  margin: 24px auto;
+  margin: 48px auto;
+}
+
+.privacyPolicy > a {
+  font-family: Lato;
+  font-size: 12.8px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: center;
+  color: var(--buttonBlackBg);
 }
